@@ -1,4 +1,7 @@
-import { FormKitTypeDefinition, FormKitFrameworkContext } from '@formkit/core';
+import type {
+  FormKitTypeDefinition,
+  FormKitFrameworkContext,
+} from '@formkit/core';
 import {
   outer,
   inner,
