@@ -15,6 +15,12 @@ import {
 } from '@formkit/inputs';
 
 declare module '@formkit/inputs' {
+  interface FormKitInputProps<Props extends FormKitInputs<Props>> {
+    'test-text': {
+      type: 'test-text';
+    };
+  }
+
   interface FormKitInputSlots<Props extends FormKitInputs<Props>> {
     'test-text': FormKitBaseSlots<Props> & {
       slotName: FormKitFrameworkContext & {
